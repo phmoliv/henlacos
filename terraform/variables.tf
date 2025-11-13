@@ -12,7 +12,6 @@ variable "domain_name" {
 
 variable "route53_zone_id" {
   description = "Route53 Zone ID"
-  default     = "Z01046291JU5F2O88XLB7"
   type        = string
   sensitive   = true
 }
