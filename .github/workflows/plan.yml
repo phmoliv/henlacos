@@ -29,3 +29,5 @@ jobs:
 
       - name: Terraform Plan
         run: terraform -chdir=terraform plan
+        env:
+          TF_VAR_route53_zone_id: ${{ secrets.ROUTE53_ID }}

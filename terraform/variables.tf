@@ -6,10 +6,12 @@ variable "bucket_name" {
 
 variable "domain_name" {
   description = "Main Domain"
+  default     = "henlacos.click"
   type        = string
 }
 
 variable "route53_zone_id" {
   description = "Route53 Zone ID"
   type        = string
+  sensitive   = true
 }
