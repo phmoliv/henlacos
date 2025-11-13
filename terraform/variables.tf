@@ -1,13 +1,13 @@
 variable "bucket_name" {
   description = "S3 Bucket Name"
-  default     = "henlacos"
   type        = string
+  sensitive   = true
 }
 
 variable "domain_name" {
   description = "Main Domain"
-  default     = "henlacos.click"
   type        = string
+  sensitive   = true
 }
 
 variable "route53_zone_id" {
