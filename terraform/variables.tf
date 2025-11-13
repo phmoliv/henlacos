@@ -18,6 +18,6 @@ variable "route53_zone_id" {
 
 variable "aliases" {
   description = "CloudFront Aliases"
-  type        = string
+  type        = list(string)
   sensitive   = true
 }
