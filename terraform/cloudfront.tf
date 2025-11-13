@@ -17,7 +17,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   #  prefix          = "myprefix"
   #}
 
-  aliases = ["henlacos.click", "www.henlacos.click"]
+  aliases = var.aliases
 
   default_cache_behavior {
     allowed_methods        = ["GET", "HEAD"]
